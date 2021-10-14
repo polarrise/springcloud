@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      label: master                                           #label表示分支
+      server:
+        git:
+          uri: https://github.com/polarrise/springcloud   #uri表示git地址：
+    #      searchPaths: respo                                #searchPaths表示目录：
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/           #设置注册中心的地址： http://localhost:8761/eureka/, 与eureka-server 中的配置 application.yml 遥相呼应

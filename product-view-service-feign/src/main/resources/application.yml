@@ -1,0 +1,16 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/  #设置注册中心的地址:http://localhost:8761/eureka/,与eureka-server中的配置 application.yml 遥相呼应
+spring:
+  application:
+    name: product-view-service-feign    #设置微服务的名称： product-data-service         把视图层微服务注册到注册中心
+  zipkin:
+    base-url: http://localhost:9411            #通过 zipkin 服务链路追踪服务器
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+    encoding: UTF-8
+    content-type: text/html
+    mode: HTML5
