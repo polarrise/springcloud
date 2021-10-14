@@ -1,0 +1,14 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/        #设置注册中心的地址:http://localhost:8761/eureka/,与eureka-server中的配置 application.yml 遥相呼应
+spring:
+  application:
+    name: product-view-service-ribbon              #设置微服务的名称： product-view-service-ribbon
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+    encoding: UTF-8
+    content-type: text/html
+    mode: HTML5
