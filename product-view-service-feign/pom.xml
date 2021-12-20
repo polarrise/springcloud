@@ -39,5 +39,25 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-config</artifactId>
         </dependency>
+
+        <!--springCloud 通过 rabbitMQ 来进行消息广播，以达到有配置信息发生改变的时候，广播给多个微服务的效果
+         改造:
+         1. 多了spring-boot-starter-actuator 用于访问路径：/actuator/bus-refresh
+         2. 多了spring-cloud-starter-bus-amqp 用于支持 rabbitmq
+         -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bus-amqp</artifactId>
+        </dependency>
+
+        <!--增加 jar spring-cloud-starter-netflix-hystrix 以支持断路器. -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+        </dependency>
     </dependencies>
 </project>

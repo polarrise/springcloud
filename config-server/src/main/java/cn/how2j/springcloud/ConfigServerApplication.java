@@ -23,3 +23,8 @@ public class ConfigServerApplication {
 
     }
 }
+/**
+ * 1.pom:主要是 spring-cloud-config-server 这个 jar 包
+ * 2.ConfigServerApplication:主要是 @EnableConfigServer 这个注解表示本springboot 是个配置服务器。使用的是 8030 端口
+ * 3.application.yml:uri 表示 git 地址：https://github.com/how2j/springcloudConfig/。  label表示 分支:master。searchPaths 表示目录：respo
+ */

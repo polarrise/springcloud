@@ -27,7 +27,7 @@ public class ProductClientRibbon {
 Ribbon 客户端， 通过 restTemplate 访问 http://PRODUCT-DATA-SERVICE/products ， 而product-data-service既不是域名也不是ip地址，而是数据服务在eureka注册中心的名称。
 注意看，这里只是指定了要访问的 微服务名称，但是并没有指定端口号到底是 8001, 还是 8002.
          */
-        return restTemplate.getForObject("http://product-data-service/products", List.class);
+        return restTemplate.getForObject("http://product-data-service/api/products", List.class);  //路径不对报错404
     }
 
 }

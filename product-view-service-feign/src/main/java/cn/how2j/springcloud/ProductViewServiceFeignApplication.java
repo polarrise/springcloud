@@ -9,6 +9,7 @@ import java.util.concurrent.TimeoutException;
 import brave.sampler.Sampler;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
@@ -23,9 +24,16 @@ import org.springframework.context.annotation.Bean;
 @EnableEurekaClient
 @EnableDiscoveryClient
 @EnableFeignClients       //表示用于使用 Feign 方式
+@EnableCircuitBreaker    //使得它可以把信息共享给监控中心。 用于断路器监控
 public class ProductViewServiceFeignApplication {
 
     public static void main(String[] args) {
+        //判断 rabiitMQ 是否启动
+        int rabbitMQPort = 5672;
+        if(NetUtil.isUsableLocalPort(rabbitMQPort)) {
+            System.err.printf("未在端口%d 发现 rabbitMQ服务，请检查rabbitMQ 是否启动", rabbitMQPort );
+            System.exit(1);
+        }
         int port = 0;
         int defaultPort = 8012;
         Future<Integer> future = ThreadUtil.execAsync(() ->{
@@ -58,9 +66,28 @@ public class ProductViewServiceFeignApplication {
         }
         new SpringApplicationBuilder(ProductViewServiceFeignApplication.class).properties("server.port=" + port).run(args);
     }
-    //在启动类里配置 Sampler 抽样策略： ALWAYS_SAMPLE 表示持续抽样
+    //在启动类里配置 Sampler 抽样策略： ALWAYS_SAMPLE 表示持续抽样。  用于服务链路追踪
     @Bean
     public Sampler defaultSampler() {
         return Sampler.ALWAYS_SAMPLE;
     }
 }
+
+
+/**
+ * 服务链路跟踪:
+ * 1.product-data-service和product-view-service都需要增加 zipkin 的jar包。
+ * <dependency>
+ * 		<groupId>org.springframework.cloud</groupId>
+ * 		<artifactId>spring-cloud-starter-zipkin</artifactId>
+ * 	</dependency>
+ * 2.数据视图微服务配置文件都需要加
+ * spring:
+ *   zipkin:
+ *     base-url: http://localhost:9411
+ * 3.在启动类里配置 Sampler 抽样策略： ALWAYS_SAMPLE 表示持续抽样
+ * @Bean
+ * public Sampler defaultSampler() {
+ * 	return Sampler.ALWAYS_SAMPLE;
+ * }
+ */

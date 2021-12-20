@@ -1,7 +1,4 @@
 package cn.how2j.springcloud.study;
-
-import cn.how2j.springcloud.springAop_ibuy.IBuy;
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -20,6 +17,7 @@ public class MapTest {
                  System.out.println("Test的buy执行--");
              }
          };
+
         test1.buy("1");
     }
 }

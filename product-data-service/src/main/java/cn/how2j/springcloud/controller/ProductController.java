@@ -19,6 +19,7 @@ import cn.how2j.springcloud.service.ProductService;
 3)如果需要返回JSON，XML或自定义mediaType内容到页面，则需要在对应的方法上加上@ResponseBody注解。
  */
 @RestController
+@RequestMapping(value = "/api")
 public class ProductController {
 
     @Autowired ProductService productService;  //在使用@Autowired时，首先在容器中查询对应类型的bean

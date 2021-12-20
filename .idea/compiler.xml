@@ -8,8 +8,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="springAop-study" />
         <module name="config-server" />
+        <module name="turbine" />
         <module name="product-view-service-ribbon" />
         <module name="product-view-service-feign" />
+        <module name="hystrix-dashboard" />
+        <module name="zuul" />
         <module name="SpringAop_Study" />
         <module name="springAop_study" />
         <module name="eurekaServer" />
@@ -19,6 +22,7 @@
     <bytecodeTargetLevel>
       <module name="config-server" target="1.8" />
       <module name="eurekaServer" target="1.8" />
+      <module name="hystrix-dashboard" target="1.8" />
       <module name="product-data-service" target="1.8" />
       <module name="product-view-service-feign" target="1.8" />
       <module name="product-view-service-ribbon" target="1.8" />
@@ -26,6 +30,8 @@
       <module name="SpringAop_Study" target="1.7" />
       <module name="springAop_study" target="1.7" />
       <module name="springcloud" target="1.8" />
+      <module name="turbine" target="1.8" />
+      <module name="zuul" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -33,10 +39,13 @@
       <module name="SpringAop_Study" options="-parameters" />
       <module name="config-server" options="-parameters" />
       <module name="eurekaServer" options="-parameters" />
+      <module name="hystrix-dashboard" options="-parameters" />
       <module name="product-data-service" options="-parameters" />
       <module name="product-view-service-feign" options="-parameters" />
       <module name="product-view-service-ribbon" options="-parameters" />
       <module name="springAop-study" options="-parameters" />
+      <module name="turbine" options="-parameters" />
+      <module name="zuul" options="-parameters" />
     </option>
   </component>
 </project>

@@ -1,6 +1,7 @@
 package cn.how2j.springcloud.springAop;
 
 
+import cn.how2j.springcloud.springAop.Impl.UserServiceImpl;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
@@ -32,4 +33,5 @@ public class MyAspect {
         System.out.println(pjp.getSignature().getName() + "  执行耗时：" + (end - start));
         return proceed;
     }
+
 }

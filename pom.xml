@@ -55,5 +55,8 @@
         <module>product-view-service-feign</module>
         <module>config-server</module>
         <module>springAop-study</module>
+        <module>hystrix-dashboard</module>
+        <module>turbine</module>
+        <module>zuul</module>
     </modules>
 </project>

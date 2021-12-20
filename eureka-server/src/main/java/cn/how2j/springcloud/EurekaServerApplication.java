@@ -15,8 +15,6 @@ EurekaServer 本身就是个 Springboot 微服务, 所以它有 @SpringBootAppli
 @EnableEurekaServer
 public class EurekaServerApplication {
 
-
-
     public static void main(String[] args) {
     	//8761 这个端口是默认的，就不要修改了，后面的子项目，都会访问这个端口。
     	int port = 8761;
