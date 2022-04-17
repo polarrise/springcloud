@@ -1,0 +1,11 @@
+
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿³÷Êûÿÿÿÿ
+c	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÄÂ¨œ
+[
+java:S1858*"@"format" returns a string, there's no need to call "toString()".(Ô–å‡úÿÿÿÿ
+S	java:S106/"9Replace this use of System.out or System.err by a logger.(êÙ¦ÿÿÿÿÿ
+v
+java:S1488"[Immediately return this expression instead of assigning it to the temporary variable "str".(Ûí¢†ÿÿÿÿÿ
+}
+java:S1488*"bImmediately return this expression instead of assigning it to the temporary variable "dateString".(Ô–å‡úÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(»˜Ÿ®ùÿÿÿÿ

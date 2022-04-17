@@ -1,0 +1,17 @@
+
+B
+java:S1602",Remove useless curly braces around statement(¹íÂê
+K
+java:S1612"5Replace this lambda with method reference 'set::add'.(¹íÂê
+G
+java:S1602",Remove useless curly braces around statement(Ö©Ööşÿÿÿÿ
+[
+java:S1612"@Replace this lambda with method reference 'System.out::println'.(Ö©Ööşÿÿÿÿ
+S	java:S106 "9Replace this use of System.out or System.err by a logger.(æ¨¤šøÿÿÿÿ
+o
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÈúŒî
+o
+java:S2293("YReplace the type specification in this constructor call with the diamond operator ("<>").(§’Èå
+ˆ
+java:S1319%"mThe return type of this method should be an interface such as "Set" rather than the implementation "HashSet".(Õè‘½ÿÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ãô¨ö

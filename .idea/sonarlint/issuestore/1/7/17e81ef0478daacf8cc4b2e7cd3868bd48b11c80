@@ -1,0 +1,25 @@
+
+q
+java:S4276"[Refactor this code to use the more specialised Functional Interface 'UnaryOperator<String>'(ÿ¼¢Ñ
+w
+java:S4276"\Refactor this code to use the more specialised Functional Interface 'UnaryOperator<Integer>'(Ðõáÿÿÿÿÿ
+T
+java:S1612">Replace this lambda with method reference 'Integer::parseInt'.(ÑµæÓ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(í Âõøÿÿÿÿ
+N	java:S106*"9Replace this use of System.out or System.err by a logger.(¸›ƒè
+N	java:S106="9Replace this use of System.out or System.err by a logger.(ñ®ñã
+c
+java:S1192"MDefine a constant instead of duplicating this literal "èµµä¸½é¢–,32" 3 times.(ÿò¸ì
+C
+java:S1604"(Make this anonymous inner class a lambda(«þœûÿÿÿÿ
+>
+java:S1604"(Make this anonymous inner class a lambda(Âü´
+>
+java:S1604$"(Make this anonymous inner class a lambda(©ÖÃ
+>
+java:S1604-"(Make this anonymous inner class a lambda(©±ƒí
+>
+java:S16042"(Make this anonymous inner class a lambda(ÀÇïê
+C
+java:S16047"(Make this anonymous inner class a lambda(ºæó¦ûÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ëïü´úÿÿÿÿ

@@ -1,0 +1,16 @@
+
+=
+java:S1659#""Declare "even" on a separate line.(†áûÿÿÿÿ
+N	java:S106("9Replace this use of System.out or System.err by a logger.(Íö¸Ü
+S	java:S106*"9Replace this use of System.out or System.err by a logger.(æö…ÿÿÿÿÿ
+N	java:S106-"9Replace this use of System.out or System.err by a logger.(Íö¸Ü
+N	java:S1060"9Replace this use of System.out or System.err by a logger.(”±õ¢
+S	java:S106j"9Replace this use of System.out or System.err by a logger.(ó•îûÿÿÿÿ
+N	java:S106l"9Replace this use of System.out or System.err by a logger.(ú¢õİ
+S	java:S106u"9Replace this use of System.out or System.err by a logger.(Ñ™¦êùÿÿÿÿ
+S	java:S106w"9Replace this use of System.out or System.err by a logger.(Ñ§İÀÿÿÿÿÿ
+7
+java:S1643?"Use a StringBuilder instead.(Ä³áûÿÿÿÿ
+7
+java:S1643C"Use a StringBuilder instead.(àÃÀúÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(„…æøÿÿÿÿ

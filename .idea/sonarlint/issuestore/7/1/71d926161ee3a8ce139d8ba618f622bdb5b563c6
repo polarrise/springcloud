@@ -1,0 +1,9 @@
+
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¡“¬ùşÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(öØÈ¢
+S	java:S106""9Replace this use of System.out or System.err by a logger.(„­ŞÌÿÿÿÿÿ
+t
+java:S1128"YRemove this unused import 'org.springframework.beans.factory.SmartInitializingSingleton'.(ÍÚéøÿÿÿÿ
+E
+java:S1128"*Remove this unused import 'java.util.Map'.(¼è½Òşÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÑĞÆÙ

@@ -1,0 +1,24 @@
+
+Q	java:S125"<This block of commented-out lines of code should be removed.(ªİÍÆ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(­ş…İ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ŠÒ ‚øÿÿÿÿ
+J
+java:S1611#"/Remove the parentheses around the "t" parameter(·¦Óîùÿÿÿÿ
+S	java:S106#"9Replace this use of System.out or System.err by a logger.(·¦Óîùÿÿÿÿ
+E
+java:S1611$"/Remove the parentheses around the "t" parameter(åÆŸŒ
+N	java:S106$"9Replace this use of System.out or System.err by a logger.(åÆŸŒ
+N	java:S106+"9Replace this use of System.out or System.err by a logger.(­ş…İ
+N	java:S1061"9Replace this use of System.out or System.err by a logger.(­ş…İ
+T	java:S1064"9Replace this use of System.out or System.err by a logger.(ƒÚáB8š¹Ó£€0
+a
+java:S1192"FDefine a constant instead of duplicating this literal "Hello" 3 times.(—ò ½üÿÿÿÿ
+C
+java:S1604"(Make this anonymous inner class a lambda(—ò ½üÿÿÿÿ
+>
+java:S1604"(Make this anonymous inner class a lambda(ïäƒª
+>
+java:S1604'"(Make this anonymous inner class a lambda(ÙÌÎ
+C
+java:S1604-"(Make this anonymous inner class a lambda(´ÁÂ¥üÿÿÿÿ
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¢…“_

@@ -1,0 +1,25 @@
+
+S	java:S106!"9Replace this use of System.out or System.err by a logger.(ß…„¤úÿÿÿÿ
+S	java:S106'"9Replace this use of System.out or System.err by a logger.(øó“ûÿÿÿÿ
+M	java:S106*"9Replace this use of System.out or System.err by a logger.(ƒÚáB
+K
+java:S1611."5Remove the parentheses around the "message" parameter(…º‚½
+N	java:S1061"9Replace this use of System.out or System.err by a logger.(“ö†ÿ
+P
+java:S16112"5Remove the parentheses around the "message" parameter(ÉÃêúÿÿÿÿ
+S	java:S1065"9Replace this use of System.out or System.err by a logger.(÷ç‹¡ÿÿÿÿÿ
+S	java:S106>"9Replace this use of System.out or System.err by a logger.(İı½Øıÿÿÿÿ
+S	java:S106D"9Replace this use of System.out or System.err by a logger.(÷Òİ”øÿÿÿÿ
+F
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ
+F
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ
+>
+java:S1604"(Make this anonymous inner class a lambda(ò•–±
+>
+java:S1604#"(Make this anonymous inner class a lambda(ñõ¥…
+>
+java:S1604:"(Make this anonymous inner class a lambda(ÙÌÎ
+C
+java:S1604@"(Make this anonymous inner class a lambda(´ÁÂ¥üÿÿÿÿ
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¢…“_

@@ -1,0 +1,23 @@
+
+B
+java:S1602",Remove useless curly braces around statement(øÂ»÷
+V
+java:S1612"@Replace this lambda with method reference 'System.out::println'.(øÂ»÷
+S	java:S106"9Replace this use of System.out or System.err by a logger.(æ¨¤šøÿÿÿÿ
+S	java:S106%"9Replace this use of System.out or System.err by a logger.(´‹¹öşÿÿÿÿ
+S	java:S106,"9Replace this use of System.out or System.err by a logger.(´‹¹öşÿÿÿÿ
+S	java:S1064"9Replace this use of System.out or System.err by a logger.(´‹¹öşÿÿÿÿ
+S	java:S106@"9Replace this use of System.out or System.err by a logger.(´‹¹öşÿÿÿÿ
+N	java:S106S"9Replace this use of System.out or System.err by a logger.(ã€‡’
+N	java:S106W"9Replace this use of System.out or System.err by a logger.(ã€‡’
+t
+java:S2293E"YReplace the type specification in this constructor call with the diamond operator ("<>").(çÔ‹¶şÿÿÿÿ
+o
+java:S2293N"YReplace the type specification in this constructor call with the diamond operator ("<>").(°‹˜ê
+
+java:S1319"dThe type of "list" should be an interface such as "List" rather than the implementation "ArrayList".(“¨Ç´üÿÿÿÿ
+z
+java:S1319"dThe type of "list" should be an interface such as "List" rather than the implementation "ArrayList".(æô”ç
+C
+java:S16049"(Make this anonymous inner class a lambda(•÷½Áüÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¾ôŞ

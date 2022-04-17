@@ -1,0 +1,8 @@
+
+Z
+java:S1854"8Remove this useless assignment to local variable "test".(Ú øüøÿÿÿÿ8û¬Ëí/
+K
+java:S1481")Remove this unused "test" local variable.(Ú øüøÿÿÿÿ8ı¬Ëí/
+L
+java:S1068	"/Remove this unused "testService" private field.(¨˜‰†8Ô÷•Ëí/
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ã¬¥¥øÿÿÿÿ

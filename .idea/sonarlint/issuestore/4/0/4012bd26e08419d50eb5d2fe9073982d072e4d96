@@ -1,0 +1,22 @@
+
+M	java:S106"9Replace this use of System.out or System.err by a logger.(­¤¬v
+A
+java:S1172"+Remove this unused method parameter "name".(ÕÃÊØ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(à‹Â¾
+t
+java:S1171"YMove the contents of this initializer to a standard constructor or to field initializers.(ÒÌâ–øÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(‰¨È€úÿÿÿÿ
+P
+java:S1854&"5Remove this useless assignment to local variable "a".(ìƒ„¹øÿÿÿÿ
+A
+java:S1481&"&Remove this unused "a" local variable.(ìƒ„¹øÿÿÿÿ
+z
+java:S1128"dRemove this unused import 'org.springframework.core.io.support.PathMatchingResourcePatternResolver'.(˜İ“‹
+s
+java:S1128"XRemove this unused import 'org.springframework.core.io.support.ResourcePatternResolver'.(úì¥âüÿÿÿÿ
+@
+java:S1068"%Remove this unused "d" private field.(­ö‰ˆøÿÿÿÿ
+>
+java:S1068"(Remove this unused "name" private field.(Ë¥¼
+x
+java:S1488""]Immediately return this expression instead of assigning it to the temporary variable "dImpl".(ÌÃ—–ùÿÿÿÿ

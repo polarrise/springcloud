@@ -1,0 +1,21 @@
+
+E
+java:S3740""/Provide the parametrized type for this generic.(áìÏ¬
+E
+java:S3740""/Provide the parametrized type for this generic.(áìÏ¬
+J
+java:S3740#"/Provide the parametrized type for this generic.(ƒâ˜üÿÿÿÿ
+l
+java:S1149""VReplace the synchronized class "Hashtable" by an unsynchronized one such as "HashMap".(áìÏ¬
+_
+java:S3358"DExtract this nested ternary operation into an independent statement.(†ÁŸüÿÿÿÿ
+V
+java:S1854#";Remove this useless assignment to local variable "hashMap".(ƒâ˜üÿÿÿÿ
+S
+java:S1854""=Remove this useless assignment to local variable "hashtable".(áìÏ¬
+D
+java:S1481"".Remove this unused "hashtable" local variable.(áìÏ¬
+G
+java:S1481#",Remove this unused "hashMap" local variable.(ƒâ˜üÿÿÿÿ
+N	java:S106$"9Replace this use of System.out or System.err by a logger.(Âê®¶
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ª›¿œøÿÿÿÿ
