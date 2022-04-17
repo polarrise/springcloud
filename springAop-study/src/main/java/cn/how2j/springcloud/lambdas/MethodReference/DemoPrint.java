@@ -40,13 +40,13 @@ public class DemoPrint {
         System.out.println(supplier2.get());
     }
 
-    private static void printString(MyPrintable data){
+    private static void printString(cn.how2j.springcloud.lambdas.MethodReference.MyPrintable data){
         data.print("Hello,World");
     }
 
     public static void main(String[] args) {
         //正常写法:
-        printString(new MyPrintable() {
+        printString(new cn.how2j.springcloud.lambdas.MethodReference.MyPrintable() {
             @Override
             public void print(String str) {
                 System.out.println(str);
