@@ -30,7 +30,7 @@ public class Sulotion2 {
     }
     private void store(ListNode p) {   //递归,自己调用自己.
         if (p == null) {
-            return;   //如果节点为null,直接返回,结束递归
+            return;   //如果节点为null,一层一层返回,return：从被调用函数返回到主调函数中继续执行，并非一遇到return整个递归结束
         }
 
         store(p.next);       //递归,一直到第五个节点才停止递归,因为第五个节点的next为null,不满足递归ListNode类型的入参,
@@ -45,10 +45,10 @@ public class Sulotion2 {
     public ListNode insertNode(ListNode head, int val) {
         ListNode newNode = new ListNode(val);
         // 添加最小临时节点
-        ListNode tem = new ListNode(0);
-        tem.next = head;     //temp:{ListNode:{val:0,head}}
+        ListNode temp = new ListNode(0);
+        temp.next = head;     //temp:0->1->4->6->8->null
         // 根节点
-        head = tem;
+        head = temp;
 
         //----------  head=head.next,下一个节点赋值给当前节点,并不会影响初始化链表tem的值----------
         while(head.next!=null&&head.next.val<=val){      //只有当head不为null并且当前节点的下一个节点的值小于传进来的值val
@@ -58,7 +58,7 @@ public class Sulotion2 {
         newNode.next = head.next;   //一定要把5节点后面排6先排完,  如果把这一步放到下下方,会造成5节点后面为null值
         head.next=newNode;  //head为第4个节点，  4节点后面排5
         // 忽略临时节点
-        return tem.next;
+        return temp.next;
     }
     /**  自己理解后修改--
      * lintCode:219 · 在排序链表中插入一个节点
@@ -68,13 +68,14 @@ public class Sulotion2 {
         if(head ==null){
             return null;
         }
-       ListNode tem=head;
+       ListNode temp=head;        //1->4->6->8
        ListNode listNode5=new ListNode(val);  //创建第五个节点
-        while(tem.next!=null&&tem.next.val<=val){
-            tem=tem.next;
+        while(temp.next!=null&&temp.next.val<=val){
+            temp=temp.next;
         }
-        listNode5.next=tem.next;
-        tem.next=listNode5;
+        //结束是temp为4节点
+        listNode5.next=temp.next;
+        temp.next=listNode5;
         System.out.println(head);
         return head;
     }
@@ -91,9 +92,10 @@ public class Sulotion2 {
         List<Integer> list = new Sulotion2().reverseStore();   //倒序排序链表
         System.out.println(list);
 
-        new Sulotion2().insertNode(null,1);  //参考答案:在排序链表中插入一个节点
+//        ListNode listNode = new Sulotion2().insertNode(listNode1, 5);//参考答案:在排序链表中插入一个节点
+//        System.out.println("insertNode:"+listNode);
 
-        //new Sulotion2().insertNode2(listNode1,5);  //自己修改:在排序链表中插入一个节点
+        new Sulotion2().insertNode2(listNode1,5);  //自己修改:在排序链表中插入一个节点
 
     }
 }

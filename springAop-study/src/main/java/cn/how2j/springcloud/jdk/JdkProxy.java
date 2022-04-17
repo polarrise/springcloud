@@ -7,6 +7,10 @@ import java.lang.reflect.Proxy;
 /**代理能干嘛？代理可以帮我们增强对象的行为！使用动态代理实质上就是调用时拦截对象方法，对方法进行改造、增强！--其实Spring AOP的底层原理就是动态代理！
  * JAVA动态代理是利用反射机制生成一个实现代理接口的匿名类，在调用具体方法前调用InvokeHandler来处理。
  * JDK动态代理实现InvocationHandler接口
+ *
+ * 1、如果目标对象实现了接口，默认情况下会采用JDK的动态代理实现AOP
+ * 2、如果目标对象实现了接口，可以强制使用CGLIB实现AOP
+ * 3、如果目标对象没有实现了接口，必须采用CGLIB库，spring会自动在JDK动态代理和CGLIB之间转换
  */
 public class JdkProxy implements InvocationHandler {
 

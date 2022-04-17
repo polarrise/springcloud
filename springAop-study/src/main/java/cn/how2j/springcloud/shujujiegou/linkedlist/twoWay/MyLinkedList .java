@@ -125,37 +125,40 @@ class MyLinkedList <E> {
     public static void main(String[] args) {
         MyLinkedList doubleList = new MyLinkedList();
         for (int i = 1; i <=5 ; i++) {
-            doubleList.addFirst(i);     //双向链表-首插法
-            //doubleList.addLast(i);        //双向链表-尾插法
-
+            //doubleList.addFirst(i);     //双向链表-首插法
+            doubleList.addLast(i);        //双向链表-尾插法
         }
-
-        doubleList.add(0);          //往尾结点后插入0节点
-        doubleList.displayNext();
-        System.out.println(doubleList);
-        System.out.println("首节点:"+doubleList.first);
-        System.out.println("尾节点:"+doubleList.last);
-        System.out.println("链表长度为:"+doubleList.size);
-        System.out.println("==========================");
-        doubleList.add(55,1);    //在1号索引插入55节点
-        System.out.println(doubleList);
-        System.out.println("首节点:"+doubleList.first);
-        System.out.println("尾节点:"+doubleList.last);
-        System.out.println("链表长度为:"+doubleList.size);
-
-        System.out.println("==========================");
-        doubleList.remove(6);         //删除6号索引的节点(尾结点)
-        System.out.println(doubleList);
-        System.out.println("首节点:"+doubleList.first);
-        System.out.println("尾节点:"+doubleList.last);
-        System.out.println("链表长度为:"+doubleList.size);
-
-        System.out.println("==========================");
-        doubleList.remove(1);
-        System.out.println(doubleList);
-        System.out.println("首节点:"+doubleList.first);
-        System.out.println("尾节点:"+doubleList.last);
-        System.out.println("链表长度为:"+doubleList.size);
+        Node first = doubleList.first;
+        while(first!=null){
+            System.out.println(first);
+            first=first.next;
+        }
+        //doubleList.add(0);          //往尾结点后插入0节点
+        //doubleList.displayNext();
+        //System.out.println(doubleList);
+        //System.out.println("首节点:"+doubleList.first);
+        //System.out.println("尾节点:"+doubleList.last);
+        //System.out.println("链表长度为:"+doubleList.size);
+        //System.out.println("==========================");
+        //doubleList.add(55,1);    //在1号索引插入55节点
+        //System.out.println(doubleList);
+        //System.out.println("首节点:"+doubleList.first);
+        //System.out.println("尾节点:"+doubleList.last);
+        //System.out.println("链表长度为:"+doubleList.size);
+        //
+        //System.out.println("==========================");
+        //doubleList.remove(6);         //删除6号索引的节点(尾结点)
+        //System.out.println(doubleList);
+        //System.out.println("首节点:"+doubleList.first);
+        //System.out.println("尾节点:"+doubleList.last);
+        //System.out.println("链表长度为:"+doubleList.size);
+        //
+        //System.out.println("==========================");
+        //doubleList.remove(1);
+        //System.out.println(doubleList);
+        //System.out.println("首节点:"+doubleList.first);
+        //System.out.println("尾节点:"+doubleList.last);
+        //System.out.println("链表长度为:"+doubleList.size);
     }
 
     /**
@@ -228,14 +231,14 @@ class MyLinkedList <E> {
          this.prev = prev;
      }
 
-     @Override
-     public String toString() {
-         return "Node{" +
-
-                 "value=" + value +
-                 ", next=" + next +
-                 '}';
-     }
+     //@Override
+     //public String toString() {
+     //    return "Node{" +
+     //
+     //            "value=" + value +
+     //            ", next=" + next +
+     //            '}';
+     //}
  }
 
 

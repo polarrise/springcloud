@@ -1,4 +1,4 @@
-package cn.how2j.springcloud.lambdas;
+package cn.how2j.springcloud.lambdas.Stream;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -15,9 +15,12 @@ public class Test {
         List<Student> studentsList=new ArrayList();
 
         List<Student> list  = studentsList.stream().filter(a -> a.getName().equals("rise")).collect(Collectors.toList());
+        System.out.println(list);
 
         Map<String, List<Student>> studentMap=new HashMap<>();
         Map<String, List<Student>> collect = studentsList.stream().filter(a -> !(a.getName().equals("100000"))).collect(Collectors.groupingBy(Student::getName));
+        System.out.println(collect);
+
         //遍历学生列表
         studentsList.forEach(a->{
 

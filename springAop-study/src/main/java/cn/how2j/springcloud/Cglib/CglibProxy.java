@@ -1,16 +1,17 @@
 package cn.how2j.springcloud.Cglib;
-
 import cn.how2j.springcloud.jdk.UserManager;
 import cn.how2j.springcloud.jdk.UserManagerImpl;
 import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.MethodInterceptor;
 import net.sf.cglib.proxy.MethodProxy;
-
 import java.lang.reflect.Method;
 
 /**代理能干嘛？代理可以帮我们增强对象的行为！使用动态代理实质上就是调用时拦截对象方法，对方法进行改造、增强！--其实Spring AOP的底层原理就是动态代理！
  * Cglib动态代理是利用asm开源包，对代理对象类的class文件加载进来，通过修改其字节码生成子类来处理。
  * Cglib动态代理，实现MethodInterceptor接口
+ *
+ *
+ *
  */
 public class CglibProxy implements MethodInterceptor {
 
@@ -38,7 +39,7 @@ public class CglibProxy implements MethodInterceptor {
     }
     public static void main(String[] args) {
         CglibProxy cglib=new CglibProxy();  //实例化CglibProxy对象
-        UserManager proxy= (UserManager) cglib.getCglibProxy(new UserManagerImpl());  //Cglib动态代理实现MethodInterceptor接口,通过对某个目标类修改其字节码生成子类,获取代理对象,然后通过代理对象调用目标类的实现方法
+        UserManagerImpl proxy= (UserManagerImpl) cglib.getCglibProxy(new UserManagerImpl());  //Cglib动态代理实现MethodInterceptor接口,通过对某个目标类修改其字节码生成子类,获取代理对象,然后通过代理对象调用目标类的实现方法
         proxy.delUser("cglibAdmin");
     }
 }

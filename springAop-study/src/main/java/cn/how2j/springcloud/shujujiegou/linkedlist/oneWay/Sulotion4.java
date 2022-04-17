@@ -16,6 +16,7 @@ public class Sulotion4 {
      * 样例2:
      * 	输入:  list1 =  1->3->8->11->15->null, list2 = 2->null
      * 	输出: 1->2->3->8->11->15->null
+     * 	注意tail指针变化即可:-1节点,1节点,2节点, 最后2.next=l1
      */
     public ListNode mergeTwoLists1(ListNode l1, ListNode l2) {
         //基本思想：将两条链表的节点按从小到大的顺序用一根线依次串起来，这根线就是新建一个dummy node 对应的 tail 指针，即 tail.next 不断指向两条链表中更小的一个节点，将所有节点串起来即可！
