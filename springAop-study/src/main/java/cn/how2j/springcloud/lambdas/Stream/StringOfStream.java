@@ -1,7 +1,6 @@
-package cn.how2j.springcloud.lambdas;
+package cn.how2j.springcloud.lambdas.Stream;
 
 import java.util.*;
-import java.util.stream.Stream;
 
 import static java.util.stream.Collectors.toList;
 

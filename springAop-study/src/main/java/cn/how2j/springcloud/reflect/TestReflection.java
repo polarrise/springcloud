@@ -98,8 +98,8 @@ public class TestReflection {
     }
 
     public static void main(String[] args) {
-        //new TestReflection().getClassObject();
-        new TestReflection().invokeMethod();
+        new TestReflection().getClassObject();
+//        new TestReflection().invokeMethod();
 //          new TestReflection().readConfigByReflect();
     }
 
