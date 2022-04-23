@@ -13,13 +13,13 @@ public class MyArrayList extends ArrayList {
      */
     @Override
     public MyArrayList clone() {
-        System.out.println("this:"+this);
+        System.out.println("this:"+this);        //this:指向当前对象
         MyArrayList cloneMyArrayList = (MyArrayList) super.clone();
         for(int i=0;i<cloneMyArrayList.size();i++){
             if(cloneMyArrayList.get(i) instanceof Company){
                 try {
                     Company clone = ((Company) cloneMyArrayList.get(i)).clone();
-                    cloneMyArrayList.set(i,clone);
+                    cloneMyArrayList.set(i,clone);  //用list.set(index, element);方法，将下标为index的元素替换为element
                 }catch (CloneNotSupportedException e) {
                     e.printStackTrace();
                 }
