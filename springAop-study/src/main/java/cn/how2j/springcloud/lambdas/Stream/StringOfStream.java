@@ -23,10 +23,10 @@ public class StringOfStream {
 
     public static List reList(){
         List<Person> list = new ArrayList<>();
-        list.add(new Person("jack", 20));
-        list.add(new Person("rise", 23));
-        list.add(new Person("mike", 22));
-        list.add(new Person("tom", 18));
+        list.add(new Person("jack", 20,"2022-4-20"));
+        list.add(new Person("rise", 23,"2021-4-20"));
+        list.add(new Person("mike", 22,"2020-4-20"));
+        list.add(new Person("tom", 18,"2019-4-20"));
         return list;
     }
     public static void test1(){
@@ -127,9 +127,11 @@ public class StringOfStream {
 class Person {
     private String name;
     private int age;
-    public Person(String name,int age){
+    private String birth;
+    public Person(String name,int age,String birth){
         this.name=name;
         this.age=age;
+        this.birth=birth;
     }
     public Boolean equals(Person p1,Person p2){
         if(p1.getName().equals(p2.getName())&&p1.getAge()==p2.getAge()){
