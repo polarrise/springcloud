@@ -9,6 +9,7 @@ public class AdapterTest1 {
     public static void main(String[] args) {
         Adaptee adaptee=new Adaptee();
         Adapter adapter=new Adapter(adaptee);
+
         adapter.output5v();
     }
 }
